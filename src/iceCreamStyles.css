@@ -1,0 +1,94 @@
+/* Container Styling */
+.IceCreams-container {
+    padding: 2rem;
+    background-color: #fffaf0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Heading Styling */
+  .IceCreams-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d2691e;
+    font-size: 2.5em;
+  }
+  
+  /* List Styling */
+  .IceCreams-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Card Styling */
+  .IceCreams-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Hover Effects */
+  .IceCreams-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(210, 105, 30, 0.2);
+  }
+  
+  /* Image Styling */
+  .IceCreams-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image Hover Effect */
+  .IceCreams-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Product Name Styling */
+  .IceCreams-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Price Styling */
+  .IceCreams-item p {
+    color: #a85959;
+    margin: 5px 0 15px;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  /* Button Styling */
+  .IceCreams-item button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  .IceCreams-item button:hover {
+    background-color: #23d80b;
+    transform: scale(1.05);
+  }
+  .IceCreams-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(247, 4, 4, 0.74);
+  }
+  

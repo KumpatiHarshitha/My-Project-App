@@ -1,0 +1,204 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #fff0f5, #e0f7fa);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* Fireworks Background (subtle and festive) */
+body::before {
+  content: "";
+  background: url('/images/fireworks-bg.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 3.2rem;
+  color: #e91e63;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #f8bbd0;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: #d81b60;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px #ff80ab;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #6a1b9a;
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.button-container a {
+  background: radial-gradient(circle, #ff4081, #f50057);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 24px rgba(255, 64, 129, 0.4);
+  transition: all 0.4s ease;
+  animation: float 2.5s ease-in-out infinite;
+}
+
+.button-container a:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #ff4081, #ec407a);
+  box-shadow: 0 14px 28px rgba(255, 64, 129, 0.6);
+}
+
+/* Categories Section */
+.homepage-categories {
+  background: linear-gradient(to right, #ffe0f0, #f8f0ff);
+  padding: 60px 20px;
+  border-top: 4px dashed #ff80ab;
+  text-align: center;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.category-card {
+  background: linear-gradient(135deg, #fff, #ffe0f0);
+  padding: 20px 30px;
+  border-radius: 20px;
+  color: #880e4f;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 16px 32px rgba(255, 64, 129, 0.4);
+}
+
+/* Benefits Section */
+.homepage-benefits {
+  padding: 80px 20px;
+  background: url('/images/confetti-bg.png') repeat;
+  background-size: contain;
+  text-align: center;
+}
+.homepage-benefits :hover{
+   transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(208, 15, 15, 0.2);
+}
+.benefit-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.benefit-card {
+  background: #ffffffee;
+  padding: 28px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.benefit-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(208, 15, 15, 0.2);
+}
+
+.benefit-card h3 {
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  color: #33691e;
+  font-size: 1.1rem;
+}
+
+/* Circle Slide */
+.circle-slide {
+  background: linear-gradient(to right, #fff3e0, #ffecb3);
+  padding: 40px 20px;
+}
+
+.circle-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #fff8e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.circle-icon:hover {
+  transform: rotate(20deg) scale(1.1);
+  background-color: #ffe082;
+}
+
+.circle-slide p {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #6d4c41;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff8a80, 0 0 20px #f06292;
+  }
+  to {
+    text-shadow: 0 0 20px #f48fb1, 0 0 30px #f06292;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

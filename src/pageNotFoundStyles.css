@@ -1,0 +1,30 @@
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-not-found h1 {
+  font-size: 3rem;
+  color: #11f0b8;
+  margin-bottom: 20px;
+}
+
+.page-not-found p {
+  font-size: 1.2rem;
+  color: #e00d8f;
+  margin-bottom: 30px;
+}
+
+.page-not-found img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,67 @@
+.container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #e6a9c0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: #053d75;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e68181;
+    padding-bottom: 0.5rem;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.orders-list {
+    list-style: none;
+    padding: 0;
+}
+
+.order-card {
+    background: rgb(244, 239, 247);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(207, 41, 41, 0.06);
+    transition: transform 0.2s;
+}
+
+.order-card:hover {
+    transform: scale(1.02);
+}
+
+.order-id {
+    font-weight: bold;
+    color: #ec8611;
+    margin-bottom: 0.3rem;
+}
+
+.date-time,
+.amount {
+    font-size: 0.95rem;
+    color: #aa1a1a;
+    margin: 0.2rem 0;
+}
+
+.item-list {
+    margin-top: 0.8rem;
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.item {
+    font-size: 0.9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #dd1561;
+    margin-bottom: 0.3rem;
+}
