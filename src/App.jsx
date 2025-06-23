@@ -2,7 +2,6 @@ import React from 'react';
 import './Styles.css';
 import './App.css';
 import './vegStyles.css';
-import './NonVegStyles.css';
 import './milkStyles.css';
 import './chocolateStyles.css';
 import './cartStyles.css';
