@@ -1,15 +1,5 @@
 import React from 'react';
 import './Styles.css';
-import './App.css';
-import './vegStyles.css';
-import './milkStyles.css';
-import './chocolateStyles.css';
-import './cartStyles.css';
-import './iceCreamStyles.css';
-import './homeStyles.css';
-import './contactUsStyles.css';
-import './pageNotFoundStyles.css'
-import './aboutUsStyles.css'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Veg from './Veg';
 import NonVeg from './NonVeg';
