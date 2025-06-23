@@ -1,5 +1,5 @@
 import React from 'react';
-import './PageNotFoundStyles.css'; // Adjust the path as necessary
+import './pageNotFoundStyles.css'; // Adjust the path as necessary
 import 'react-toastify/dist/ReactToastify.css';
 
 function PageNotFound() {
